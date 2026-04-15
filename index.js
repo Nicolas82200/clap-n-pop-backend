@@ -302,9 +302,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/reservoir-dogs/Harvey-Keitel.jpg",
 			},
 			{
-				actorName: "Virginia Madsen",
+				actorName: "Steve Buscemi",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/reservoir-dogs/Virginia-Madsen.jpg",
+					"http://localhost:3100/assets/images/actor-Images/reservoir-dogs/Steve-Buscemi.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/reservoir-dogs.wav",
@@ -406,7 +406,7 @@ const movies = [
 			{
 				actorName: "Matthew McConaughey",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/interstellar/Matthew-McConaughey.jpg",
+					"http://localhost:3100/assets/images/actor-Images/interstellar/Mattew-McConaughey.jpg",
 			},
 			{
 				actorName: "Jessica Chastain",
@@ -575,9 +575,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/star-wars/Harrison-Ford.jpg",
 			},
 			{
-				actorName: "Hayden Christensen",
+				actorName: "Alec-Guinness",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/star-wars/Hayden-Christensen.jpg",
+					"http://localhost:3100/assets/images/actor-Images/star-wars/Alec-Guinness.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/star-wars.wav",
@@ -640,22 +640,22 @@ const movies = [
 			{
 				actorName: "Henry Thomas",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/et/Henry-Thomas.jpg",
+					"http://localhost:3100/assets/images/actor-Images/e-t/Henry-Thomas.jpg",
 			},
 			{
 				actorName: "Drew Barrymore",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/et/Drew-Barrymore.jpg",
+					"http://localhost:3100/assets/images/actor-Images/e-t/Drew-Barrymore.jpg",
 			},
 			{
 				actorName: "Robert MacNaughton",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/et/Robert-MacNaughton.jpg",
+					"http://localhost:3100/assets/images/actor-Images/e-t/Robert-MacNaughton.jpg",
 			},
 			{
 				actorName: "Dee Wallace",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/et/Dee-Wallace.jpg",
+					"http://localhost:3100/assets/images/actor-Images/e-t/Dee-Wallace.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/e-t.wav",
@@ -692,9 +692,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/le-bon-la-brute-et-le-truand/Lee-Van-Cleef.jpg",
 			},
 			{
-				actorName: "Antonio Casale",
+				actorName: "Luigi Pistilli",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/le-bon-la-brute-et-le-truand/Antonio-Casale.jpg",
+					"http://localhost:3100/assets/images/actor-Images/le-bon-la-brute-et-le-truand/Luigi-Pistilli.jpg",
 			},
 		],
 		movieSong:
@@ -1473,9 +1473,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/flashdance/Michael-Nouri.jpg",
 			},
 			{
-				actorName: "Alexandra Owens",
+				actorName: "Sunny Johnson",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/flashdance/Alexandra-Owens.jpg",
+					"http://localhost:3100/assets/images/actor-Images/flashdance/Sunny-Johnson.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/flashdance.wav",
