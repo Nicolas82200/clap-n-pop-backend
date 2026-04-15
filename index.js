@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const fs = require("fs");
 const path = require("path");
 const app = express();
 const PORT = 3100;
@@ -1160,9 +1161,174 @@ const movies = [
 	},
 ];
 
+const ACTOR_IMAGES_ROOT = path.join(__dirname, "assets/images/actor-Images");
+const SUPPORTED_IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp"]);
+
+const normalizeLoose = (value) =>
+	value
+		.toLowerCase()
+		.normalize("NFD")
+		.replace(/[\u0300-\u036f]/g, "")
+		.replace(/[^\w\s]|_/g, " ")
+		.replace(/\s+/g, " ")
+		.trim();
+
+const removeLeadingArticles = (value) =>
+	value.replace(/^(le|la|les|l|the)\s+/i, "").trim();
+
+const toBigrams = (value) => {
+	const compact = value.replace(/\s+/g, "");
+	const bigrams = [];
+
+	for (let index = 0; index < compact.length - 1; index += 1) {
+		bigrams.push(compact.slice(index, index + 2));
+	}
+
+	return bigrams;
+};
+
+const diceCoefficient = (left, right) => {
+	if (!left || !right) return 0;
+	if (left === right) return 1;
+	if (left.length < 2 || right.length < 2) return 0;
+
+	const leftBigrams = toBigrams(left);
+	const rightBigrams = toBigrams(right);
+	const rightBag = new Map();
+	let overlap = 0;
+
+	for (const bigram of rightBigrams) {
+		rightBag.set(bigram, (rightBag.get(bigram) ?? 0) + 1);
+	}
+
+	for (const bigram of leftBigrams) {
+		const count = rightBag.get(bigram) ?? 0;
+		if (count > 0) {
+			rightBag.set(bigram, count - 1);
+			overlap += 1;
+		}
+	}
+
+	return (2 * overlap) / (leftBigrams.length + rightBigrams.length);
+};
+
+const similarityScore = (input, candidate) => {
+	const normalizedInput = normalizeLoose(input);
+	const normalizedCandidate = normalizeLoose(candidate);
+	const inputNoArticle = removeLeadingArticles(normalizedInput);
+	const candidateNoArticle = removeLeadingArticles(normalizedCandidate);
+
+	const fullScore = diceCoefficient(normalizedInput, normalizedCandidate);
+	const noArticleScore = diceCoefficient(inputNoArticle, candidateNoArticle);
+	let score = Math.max(fullScore, noArticleScore);
+
+	if (
+		normalizedInput.length > 0 &&
+		normalizedCandidate.length > 0 &&
+		(normalizedInput.includes(normalizedCandidate) ||
+			normalizedCandidate.includes(normalizedInput))
+	) {
+		score = Math.max(score, 0.93);
+	}
+
+	return score;
+};
+
+const bestMatch = (input, candidates, threshold = 0.43) => {
+	let bestCandidate = null;
+	let bestScore = 0;
+
+	for (const candidate of candidates) {
+		const score = similarityScore(input, candidate);
+		if (score > bestScore) {
+			bestScore = score;
+			bestCandidate = candidate;
+		}
+	}
+
+	return bestScore >= threshold ? bestCandidate : null;
+};
+
+const actorFolders = fs
+	.readdirSync(ACTOR_IMAGES_ROOT, { withFileTypes: true })
+	.filter((entry) => entry.isDirectory())
+	.map((entry) => entry.name);
+
+const actorFilesByFolder = new Map(
+	actorFolders.map((folderName) => {
+		const folderPath = path.join(ACTOR_IMAGES_ROOT, folderName);
+		const files = fs
+			.readdirSync(folderPath, { withFileTypes: true })
+			.filter((entry) => entry.isFile())
+			.map((entry) => entry.name)
+			.filter((fileName) =>
+				SUPPORTED_IMAGE_EXTENSIONS.has(
+					path.extname(fileName).toLowerCase(),
+				),
+			);
+
+		return [folderName, files];
+	}),
+);
+
+const buildActorImageUrl = (folderName, fileName) => {
+	const encodedFolder = encodeURIComponent(folderName);
+	const encodedFile = encodeURIComponent(fileName);
+	return `http://localhost:${PORT}/assets/images/actor-Images/${encodedFolder}/${encodedFile}`;
+};
+
+const findClosestActorFile = (actorName, actorFiles, usedFiles) => {
+	let bestFile = "";
+	let bestScore = 0;
+
+	for (const fileName of actorFiles) {
+		if (usedFiles.has(fileName)) continue;
+
+		const actorBaseName = fileName.replace(/\.[^/.]+$/, "");
+		const score = similarityScore(actorName, actorBaseName);
+
+		if (score > bestScore) {
+			bestScore = score;
+			bestFile = fileName;
+		}
+	}
+
+	return bestScore >= 0.43 ? bestFile : "";
+};
+
+const moviesWithActorImages = movies.map((movie) => {
+	const matchedFolder = bestMatch(movie.title, actorFolders);
+	if (!matchedFolder) return movie;
+
+	const actorFiles = actorFilesByFolder.get(matchedFolder) ?? [];
+	const usedFiles = new Set();
+
+	return {
+		...movie,
+		actors: movie.actors.map((actor) => {
+			let selectedFile = findClosestActorFile(actor.actorName, actorFiles, usedFiles);
+
+			if (!selectedFile) {
+				selectedFile =
+					actorFiles.find((fileName) => !usedFiles.has(fileName)) ?? actorFiles[0] ?? "";
+			}
+
+			if (!selectedFile) {
+				return actor;
+			}
+
+			usedFiles.add(selectedFile);
+			return {
+				...actor,
+				actorImg: buildActorImageUrl(matchedFolder, selectedFile),
+			};
+		}),
+	};
+});
+
 app.use(cors("*"));
 app.get("/", (req, res) => {
-	res.json(movies);
+	res.json(moviesWithActorImages);
 });
 
 app.listen(PORT, () => {
