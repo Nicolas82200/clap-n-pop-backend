@@ -194,10 +194,10 @@ const movies = [
 		synopsis: `Vito Corleone est le patriarche d'une puissante famille de la mafia new-yorkaise. Après une tentative d'assassinat, c'est son fils cadet Michael, ancien combattant sans lien avec le crime organisé, qui reprend progressivement les rênes de l'empire familial. Ce chef-d'œuvre de Francis Ford Coppola explore la corruption, la loyauté, la trahison et le prix du pouvoir à travers la saga d'une famille mafieuse.`,
 		gender: ["Crime", "Drame", "Thriller"],
 		movie4Images: [
-			"http://localhost:3100/assets/images/movie-Images/le-parrain/le-parrain-img01.png",
-			"http://localhost:3100/assets/images/movie-Images/le-parrain/le-parrain-img02.png",
-			"http://localhost:3100/assets/images/movie-Images/le-parrain/le-parrain-img03.png",
-			"http://localhost:3100/assets/images/movie-Images/le-parrain/le-parrain-img04.png",
+			"http://localhost:3100/assets/images/movie-Images/le-parrain/parrain-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/le-parrain/parrain-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/le-parrain/parrain-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/le-parrain/parrain-img04.png",
 		],
 		trailer: "https://www.youtube.com/watch?v=sY1S34973zA",
 		producer: "Francis Ford Coppola",
@@ -389,10 +389,10 @@ const movies = [
 		synopsis: `À bord du Titanic lors de son voyage inaugural en 1912, la jeune aristocrate Rose DeWitt Bukater tombe amoureuse de Jack Dawson, un artiste sans le sou voyageant en troisième classe. Leur histoire d'amour passionnée est brisée par la tragédie lorsque le paquebot entre en collision avec un iceberg et commence à couler, condamnant des milliers de passagers.`,
 		gender: ["Romance", "Drame", "Catastrophe"],
 		movie4Images: [
-			"http://localhost:3100/assets/images/movie-Images/titanic/titanicimg01.png",
-			"http://localhost:3100/assets/images/movie-Images/titanic/titanicimg02.png",
-			"http://localhost:3100/assets/images/movie-Images/titanic/titanicimg03.png",
-			"http://localhost:3100/assets/images/movie-Images/titanic/titanicimg04.png",
+			"http://localhost:3100/assets/images/movie-Images/titanic/titanic-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/titanic/titanic-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/titanic/titanic-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/titanic/titanic-img04.png",
 		],
 		trailer: "https://www.youtube.com/watch?v=2eeXJ6HgkQ",
 		producer: "James Cameron",
@@ -428,10 +428,10 @@ const movies = [
 		synopsis: `Dans un futur proche où la Terre se meurt, l'expilote Cooper est recruté pour mener une mission spatiale désespérée : traverser un trou de ver près de Saturne pour trouver une nouvelle planète habitable. Déchiré entre son amour pour sa fille Murph et son devoir envers l'humanité, Cooper explore des mondes inconnus audelà du temps et de l'espace dans ce voyage vertigineux à travers les lois de la physique.`,
 		gender: ["ScienceFiction", "Aventure", "Drame"],
 		movie4Images: [
-			"http://localhost:3100/assets/images/movie-Images/interstellar/interstellarimg01.png",
-			"http://localhost:3100/assets/images/movie-Images/interstellar/interstellarimg02.png",
-			"http://localhost:3100/assets/images/movie-Images/interstellar/interstellarimg03.png",
-			"http://localhost:3100/assets/images/movie-Images/interstellar/interstellarimg04.png",
+			"http://localhost:3100/assets/images/movie-Images/interstellar/interstellar-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/interstellar/interstellar-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/interstellar/interstellar-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/interstellar/interstellar-img04.png",
 		],
 		trailer: "https://www.youtube.com/watch?v=zSWdZVtXT7E",
 		producer: "Christopher Nolan",
@@ -467,10 +467,10 @@ const movies = [
 		synopsis: `Maximus Decimus Meridius, général romain adulé, voit sa vie basculer quand l'empereur Marc Aurèle est assassiné par son fils Commode. Trahi, sa famille massacrée, Maximus est réduit en esclavage et devient gladiateur. Porté par la vengeance et l'espoir de rendre la liberté à Rome, il combat dans les arènes du Colisée pour affronter celui qui lui a tout pris.`,
 		gender: ["Action", "Aventure", "Drame historique"],
 		movie4Images: [
-			"http://localhost:3100/assets/images/movie-Images/gladiator/gladiatorimg01.png",
-			"http://localhost:3100/assets/images/movie-Images/gladiator/gladiatorimg02.png",
-			"http://localhost:3100/assets/images/movie-Images/gladiator/gladiatorimg03.png",
-			"http://localhost:3100/assets/images/movie-Images/gladiator/gladiatorimg04.png",
+			"http://localhost:3100/assets/images/movie-Images/gladiator/gladiator-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/gladiator/gladiator-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/gladiator/gladiator-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/gladiator/gladiator-img04.png",
 		],
 		trailer: "https://www.youtube.com/watch?v=owK1qxDselE",
 		producer: "Ridley Scott",
@@ -810,9 +810,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/je-suis-une-legende/Willow-Smith.jpg",
 			},
 			{
-				actorName: "Darrell Foster",
+				actorName: "Charlie Tahan",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/je-suis-une-legende/Darrell-Foster.jpg",
+					"http://localhost:3100/assets/images/actor-Images/je-suis-une-legende/Charlie-Tahan.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/je-suis-une-legende.wav",
@@ -1655,22 +1655,22 @@ const movies = [
 			{
 				actorName: "Jean Reno",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/le-grand-bleu/Jean-Reno.jpg",
+					"http://localhost:3100/assets/images/actor-Images/grand-bleu/Jean-Reno.jpg",
 			},
 			{
 				actorName: "Jean-Marc Barr",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/le-grand-bleu/Jean-Marc-Barr.jpg",
+					"http://localhost:3100/assets/images/actor-Images/grand-bleu/Jean-Marc-Barr.jpg",
 			},
 			{
 				actorName: "Rosanna Arquette",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/le-grand-bleu/Rosanna-Arquette.jpg",
+					"http://localhost:3100/assets/images/actor-Images/grand-bleu/Rosanna-Arquette.jpg",
 			},
 			{
 				actorName: "Luc Besson",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/le-grand-bleu/Luc-Besson.jpg",
+					"http://localhost:3100/assets/images/actor-Images/grand-bleu/Luc-Besson.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/grand-bleu.wav",
