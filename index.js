@@ -394,7 +394,8 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/titanic/titanic-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/titanic/titanic-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=2eeXJ6HgkQ",
+		trailer:
+			"https://www.youtube.com/watch?v=I7c1etV7D7g&pp=ygUPdGl0YW5pYyB0cmFpbGVy",
 		producer: "James Cameron",
 	},
 	{
@@ -550,7 +551,8 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/indiana-jones/indiana-jones-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/indiana-jones/indiana-jones-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=XkkZDCvLSdE",
+		trailer:
+			"https://www.youtube.com/watch?v=0xQSIdSRlAk&pp=ygUVaW5kaWFuYSBqb25lcyB0cmFpbGVy0gcJCdMKAYcqIYzv",
 		producer: "Steven Spielberg",
 	},
 	{
@@ -824,7 +826,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/je-suis-une-legende/je-suis-une-legende-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/je-suis-une-legende/je-suis-une-legende-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=1L3vs9L3B5w",
+		trailer: "https://www.youtube.com/watch?v=dtKMEAXyPkg",
 		producer: "Francis Lawrence",
 	},
 	{
@@ -941,7 +943,8 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/apocalypse-now/apocalypse-now-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/apocalypse-now/apocalypse-now-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=KxvFgMpwQkk",
+		trailer:
+			"https://www.youtube.com/watch?v=9l-ViOOFH-s&pp=ygUWYXBvY2FseXBzZSBub3cgdHJhaWxlcg%3D%3D",
 		producer: "Francis Ford Coppola",
 	},
 	{
@@ -1019,7 +1022,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/requiem-for-a-dream/requiem-for-a-dream-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/requiem-for-a-dream/requiem-for-a-dream-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=E5oB_ioE0m0",
+		trailer: "https://www.youtube.com/watch?v=QBwzN4v1vA0",
 		producer: "Darren Aronofsky",
 	},
 	{
@@ -1097,7 +1100,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/scarface/scarface-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/scarface/scarface-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=XqN6lmNUAEA",
+		trailer: "https://www.youtube.com/watch?v=cv276Wg3e7I",
 		producer: "Brian De Palma",
 	},
 	{
@@ -1175,7 +1178,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/transformers/transformers-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/transformers/transformers-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=vPRv0HFTpKE",
+		trailer: "https://www.youtube.com/watch?v=CbX_SIz_9fk",
 		producer: "Michael Bay",
 	},
 	{
@@ -1292,7 +1295,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/robin-des-bois/robin-des-bois-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/robin-des-bois/robin-des-bois-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=nMr3ItVMCFY",
+		trailer: "https://www.youtube.com/watch?v=fhz5aB-u77Q",
 		producer: "Kevin Reynolds",
 	},
 	{
@@ -1331,7 +1334,8 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/highlander/highlander-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/highlander/highlander-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=_9RwsKMKAhk",
+		trailer:
+			"https://www.youtube.com/watch?v=omOZyLmNMJs&pp=ygUSaGlnaGxhbmRlciB0cmFpbGVy",
 		producer: "Russell Mulcahy",
 	},
 	{
@@ -1370,7 +1374,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/grease/grease-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/grease/grease-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=9x6GVsNt-BY",
+		trailer: "https://www.youtube.com/watch?v=THd96gHV7Tg",
 		producer: "Randal Kleiser",
 	},
 	{
@@ -1448,7 +1452,8 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/dirty-dancing/dirty-dancing-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/dirty-dancing/dirty-dancing-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=PylMQFPDKGQ",
+		trailer:
+			"https://www.youtube.com/watch?v=eIcmQNy9FsM&pp=ygUVZGlydHkgZGFuY2luZyB0cmFpbGVy",
 		producer: "Emile Ardolino",
 	},
 	{
@@ -1487,7 +1492,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/flashdance/flashdance-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/flashdance/flashdance-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=IRB5orGmFzQ",
+		trailer: "https://www.youtube.com/watch?v=9aqbkd19pMA",
 		producer: "Adrian Lyne",
 	},
 	{
@@ -1526,7 +1531,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/footloose/footloose-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/footloose/footloose-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=E3zRCLBnnGE",
+		trailer: "https://www.youtube.com/watch?v=P4narQca4Oc",
 		producer: "Herbert Ross",
 	},
 	{
@@ -1604,7 +1609,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/famille-addams/famille-addams-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/famille-addams/famille-addams-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=8hZQSGqcCWM",
+		trailer: "https://www.youtube.com/watch?v=A6X4VAHdDVg",
 		producer: "Barry Sonnenfeld",
 	},
 	{
@@ -1682,7 +1687,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/le-grand-bleu/le-grand-bleu-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/le-grand-bleu/le-grand-bleu-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=Y_7-yslHBhE",
+		trailer: "https://www.youtube.com/watch?v=WNkIjVyf3UQ",
 		producer: "Luc Besson",
 	},
 	{
@@ -1721,7 +1726,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/james-bond/james-bond-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/james-bond/james-bond-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=35CENyFQKmM",
+		trailer: "https://www.youtube.com/watch?v=GV_18deeAXk",
 		producer: "Martin Campbell",
 	},
 	{
@@ -1760,7 +1765,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/mission-impossible/mission-impossible-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/mission-impossible/mission-impossible-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=aRCwXxUkqOM",
+		trailer: "https://www.youtube.com/watch?v=L8Pbjh4EZRk",
 		producer: "Brian De Palma",
 	},
 	{
@@ -1799,7 +1804,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/magicien-doz/magicien-doz-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/magicien-doz/magicien-doz-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=8bMI9HkZ4JQ",
+		trailer: "https://www.youtube.com/watch?v=H_3T4DGw10U",
 		producer: "Victor Fleming",
 	},
 	{
@@ -1838,7 +1843,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/charlie-chocolaterie/charlie-chocolaterie-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/charlie-chocolaterie/charlie-chocolaterie-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=H_vdkQqFRAw",
+		trailer: "https://www.youtube.com/watch?v=OFVGCUIXJls",
 		producer: "Tim Burton",
 	},
 	{
@@ -1916,7 +1921,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/fast-and-furious/fast-and-furious-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/fast-and-furious/fast-and-furious-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=oGYzDqnLNzA",
+		trailer: "https://www.youtube.com/watch?v=ZsJz2TJAPjw",
 		producer: "Rob Cohen",
 	},
 	{
