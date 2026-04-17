@@ -11,7 +11,7 @@ const movies = [
 		id: 1,
 		title: "Harry Potter",
 		poster:
-			"https://image.tmdb.org/t/p/w600_and_h900_face/8KpHRokGpiaqEGpjYe0rpywtvUx.jpg",
+			"https://www.themoviedb.org/t/p/w600_and_h900_face/fbxQ44VRdM2PVzHSNajUseUteem.jpg",
 		actors: [
 			{
 				actorName: "Daniel Radcliffe",
@@ -43,7 +43,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/harry-potter/harrypotter-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/harry-potter/harrypotter-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=Q4niQwkV1PI",
+		trailer: "https://www.youtube.com/watch?v=VyHV0BRtdxo",
 		producer: "Chris Columbus",
 	},
 	{
