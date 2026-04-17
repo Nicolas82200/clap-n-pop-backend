@@ -11,7 +11,7 @@ const movies = [
 		id: 1,
 		title: "Harry Potter",
 		poster:
-			"https://image.tmdb.org/t/p/w600_and_h900_face/8KpHRokGpiaqEGpjYe0rpywtvUx.jpg",
+			"https://www.themoviedb.org/t/p/w600_and_h900_face/fbxQ44VRdM2PVzHSNajUseUteem.jpg",
 		actors: [
 			{
 				actorName: "Daniel Radcliffe",
@@ -43,7 +43,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/harry-potter/harrypotter-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/harry-potter/harrypotter-img04.png",
 		],
-		trailer: "https://www.youtube.com/watch?v=Q4niQwkV1PI",
+		trailer: "https://www.youtube.com/watch?v=VyHV0BRtdxo",
 		producer: "Chris Columbus",
 	},
 	{
@@ -831,7 +831,7 @@ const movies = [
 	},
 	{
 		id: 22,
-		title: "Batman : The Dark Knight",
+		title: "Batman",
 		poster:
 			"https://image.tmdb.org/t/p/w600_and_h900_face/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
 		actors: [
@@ -1941,18 +1941,19 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/rocky/Talia-Shire.jpg",
 			},
 			{
-				actorName: "Burt Young",
-				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/rocky/Burt-Young.jpg",
-			},
-			{
 				actorName: "Carl Weathers",
 				actorImg:
 					"http://localhost:3100/assets/images/actor-Images/rocky/Carl-Weathers.jpg",
 			},
+			{
+				actorName: "Burt Young",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/rocky/Burt-Young.jpg",
+			},
 		],
 		movieSong: "http://localhost:3100/assets/song/rocky.wav",
-		synopsis: `Rocky Balboa est un boxeur amateur de Philadelphie qui gagne sa vie comme homme de main pour un usurier. Par un coup du sort, le champion du monde Apollo Creed lui offre une chance de combattre pour le titre. Sans espoir réel de victoire, Rocky s'entraîne avec acharnement pour prouver à lui-même et au monde entier qu'il n'est pas qu'un "has-been". Un film inspirant sur la persévérance et la dignité humaine.`,
+		synopsis:
+			"Rocky Balboa, boxeur amateur, obtient une chance improbable de combattre pour le titre mondial et se prépare à dépasser ses limites.",
 		gender: ["Drame", "Sport"],
 		movie4Images: [
 			"http://localhost:3100/assets/images/movie-Images/rocky/rocky-img01.png",
@@ -1962,6 +1963,579 @@ const movies = [
 		],
 		trailer: "https://www.youtube.com/watch?v=YZCx-9wF3ow",
 		producer: "John G. Avildsen",
+	},
+	{
+		id: 51,
+		title: "Drive",
+		poster:
+			"https://image.tmdb.org/t/p/w600_and_h900_face/mUKm5eaYm30KYyaudRn5tA204ua.jpg",
+		actors: [
+			{
+				actorName: "Ryan Gosling",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/drive/Ryan-Gosling.jpg",
+			},
+			{
+				actorName: "Carey Mulligan",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/drive/Carey-Mulligan.jpg",
+			},
+			{
+				actorName: "Bryan Cranston",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/drive/Bryan-Cranston.jpg",
+			},
+			{
+				actorName: "Oscar Isaac",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/drive/Oscar-Isaac.jpg",
+			},
+		],
+		movieSong: "http://localhost:3100/assets/song/drive.wav",
+		synopsis:
+			"Un cascadeur discret travaillant comme chauffeur pour des braquages voit sa vie basculer lorsqu’il s’implique dans une affaire criminelle violente.",
+		gender: ["Thriller", "Crime", "Drame"],
+		movie4Images: [
+			"http://localhost:3100/assets/images/movie-Images/drive/drive-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/drive/drive-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/drive/drive-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/drive/drive-img04.png",
+		],
+		trailer: "https://www.youtube.com/watch?v=KBiOF3y1W0Y",
+		producer: "Nicolas Winding Refn",
+	},
+
+	{
+		id: 52,
+		title: "Le monde de Némo",
+		poster:
+			"https://image.tmdb.org/t/p/w600_and_h900_face/8zR2vXoXfdlknEYjfHvCbb1rJbI.jpg",
+		actors: [
+			{
+				actorName: "Albert Brooks",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/nemo/Albert-Brooks.jpg",
+			},
+			{
+				actorName: "Ellen DeGeneres",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/nemo/Ellen-DeGeneres.jpg",
+			},
+			{
+				actorName: "Alexander Gould",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/nemo/Alexander-Gould.jpg",
+			},
+			{
+				actorName: "Willem Dafoe",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/nemo/Willem-Dafoe.jpg",
+			},
+		],
+		movieSong: "http://localhost:3100/assets/song/nemo.wav",
+		synopsis:
+			"Un poisson-clown traverse l’océan avec une amie amnésique pour retrouver son fils capturé et emprisonné dans un aquarium.",
+		gender: ["Animation", "Aventure", "Famille"],
+		movie4Images: [
+			"http://localhost:3100/assets/images/movie-Images/nemo/nemo-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/nemo/nemo-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/nemo/nemo-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/nemo/nemo-img04.png",
+		],
+		trailer: "https://www.youtube.com/watch?v=SPHfeNgogVs",
+		producer: "Andrew Stanton",
+	},
+
+	{
+		id: 53,
+		title: "Le Voyage de Chihiro",
+		poster:
+			"https://www.themoviedb.org/t/p/w600_and_h900_face/12TAqK0AUgdcYE9ZYZ9r7ASbH5Q.jpg",
+		actors: [
+			{
+				actorName: "Rumi Hiiragi",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/chihiro/Rumi-Hiiragi.jpg",
+			},
+			{
+				actorName: "Miyu Irino",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/chihiro/Miyu-Irino.jpg",
+			},
+			{
+				actorName: "Mari Natsuki",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/chihiro/Mari-Natsuki.jpg",
+			},
+			{
+				actorName: "Bunta Sugawara",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/chihiro/Bunta-Sugawara.jpg",
+			},
+		],
+		movieSong: "http://localhost:3100/assets/song/chihiro.wav",
+		synopsis:
+			"Une fillette se retrouve piégée dans un monde spirituel et doit travailler pour une sorcière afin de sauver ses parents transformés en animaux.",
+		gender: ["Animation", "Fantastique", "Aventure"],
+		movie4Images: [
+			"http://localhost:3100/assets/images/movie-Images/chihiro/chihiro-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/chihiro/chihiro-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/chihiro/chihiro-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/chihiro/chihiro-img04.png",
+		],
+		trailer: "https://www.youtube.com/watch?v=ByXuk9QqQkk",
+		producer: "Hayao Miyazaki",
+	},
+
+	{
+		id: 54,
+		title: "The Tree of Life",
+		poster:
+			"https://www.themoviedb.org/t/p/w600_and_h900_face/y47kUz3IYdoxKyscG6Bc6EPo59k.jpg",
+		actors: [
+			{
+				actorName: "Brad Pitt",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/tree-of-life/Brad-Pitt.jpg",
+			},
+			{
+				actorName: "Jessica Chastain",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/tree-of-life/Jessica-Chastain.jpg",
+			},
+			{
+				actorName: "Sean Penn",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/tree-of-life/Sean-Penn.jpg",
+			},
+			{
+				actorName: "Hunter McCracken",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/tree-of-life/Hunter-McCracken.jpg",
+			},
+		],
+		movieSong: "http://localhost:3100/assets/song/tree-of-life.wav",
+		synopsis:
+			"Un homme revisite son enfance marquée par son père strict et sa mère aimante, dans une réflexion sur la vie, la mémoire et l’univers.",
+		gender: ["Drame", "Philosophique"],
+		movie4Images: [
+			"http://localhost:3100/assets/images/movie-Images/tree-of-life/tree-of-life-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/tree-of-life/tree-of-life-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/tree-of-life/tree-of-life-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/tree-of-life/tree-of-life-img04.png",
+		],
+		trailer: "https://www.youtube.com/watch?v=RrAz1YLh8nY",
+		producer: "Terrence Malick",
+	},
+
+	{
+		id: 55,
+		title: "Il faut sauver le soldat Ryan",
+		poster:
+			"https://www.themoviedb.org/t/p/w600_and_h900_face/mlSsQWIQV0NKIqqRQRI0yi9gqk8.jpg",
+		actors: [
+			{
+				actorName: "Tom Hanks",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/soldat-ryan/Tom-Hanks.jpg",
+			},
+			{
+				actorName: "Matt Damon",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/soldat-ryan/Matt-Damon.jpg",
+			},
+			{
+				actorName: "Tom Sizemore",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/soldat-ryan/Tom-Sizemore.jpg",
+			},
+			{
+				actorName: "Edward Burns",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/soldat-ryan/Edward-Burns.jpg",
+			},
+		],
+		movieSong: "http://localhost:3100/assets/song/soldat-ryan.wav",
+		synopsis:
+			"Une escouade est envoyée en territoire ennemi pour retrouver un soldat dont les frères ont tous été tués au combat.",
+		gender: ["Guerre", "Drame"],
+		movie4Images: [
+			"http://localhost:3100/assets/images/movie-Images/soldat-ryan/soldat-ryan-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/soldat-ryan/soldat-ryan-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/soldat-ryan/soldat-ryan-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/soldat-ryan/soldat-ryan-img04.png",
+		],
+		trailer: "https://www.youtube.com/watch?v=zwhP5b4tD6g",
+		producer: "Steven Spielberg",
+	},
+
+	{
+		id: 56,
+		title: "Edward aux mains d'argent",
+		poster:
+			"https://www.themoviedb.org/t/p/w600_and_h900_face/tMCj9KY70NasF2KsiXWpg0m7smK.jpg",
+		actors: [
+			{
+				actorName: "Johnny Depp",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/edward/Johnny-Depp.jpg",
+			},
+			{
+				actorName: "Winona Ryder",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/edward/Winona-Ryder.jpg",
+			},
+			{
+				actorName: "Dianne Wiest",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/edward/Dianne-Wiest.jpg",
+			},
+			{
+				actorName: "Alan Arkin",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/edward/Alan-Arkin.jpg",
+			},
+		],
+		movieSong: "http://localhost:3100/assets/song/edward.wav",
+		synopsis:
+			"Un homme artificiel doté de lames à la place des mains découvre la société humaine et l’amour, mais son don devient une malédiction.",
+		gender: ["Fantastique", "Drame"],
+		movie4Images: [
+			"http://localhost:3100/assets/images/movie-Images/edward/edward-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/edward/edward-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/edward/edward-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/edward/edward-img04.png",
+		],
+		trailer: "https://www.youtube.com/watch?v=eq2PPFUhfpo",
+		producer: "Tim Burton",
+	},
+
+	{
+		id: 57,
+		title: "Django Unchained",
+		poster:
+			"https://www.themoviedb.org/t/p/w600_and_h900_face/vRXUnWrXUgXRoX0BaEcuNMfyeQt.jpg",
+		actors: [
+			{
+				actorName: "Jamie Foxx",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/django/Jamie-Foxx.jpg",
+			},
+			{
+				actorName: "Christoph Waltz",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/django/Christoph-Waltz.jpg",
+			},
+			{
+				actorName: "Leonardo DiCaprio",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/django/Leonardo-DiCaprio.jpg",
+			},
+			{
+				actorName: "Samuel L. Jackson",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/django/Samuel-L-Jackson.jpg",
+			},
+		],
+		movieSong: "http://localhost:3100/assets/song/django.wav",
+		synopsis:
+			"Un ancien esclave devenu chasseur de primes part sauver sa femme détenue dans une plantation du Sud des États-Unis.",
+		gender: ["Western", "Action", "Drame"],
+		movie4Images: [
+			"http://localhost:3100/assets/images/movie-Images/django/django-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/django/django-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/django/django-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/django/django-img04.png",
+		],
+		trailer: "https://www.youtube.com/watch?v=0fUCuvNlOCg",
+		producer: "Quentin Tarantino",
+	},
+
+	{
+		id: 58,
+		title: "American Gangster",
+		poster:
+			"https://www.themoviedb.org/t/p/w600_and_h900_face/qKVkNqxB20BUsUQYgmELskPyO0a.jpg",
+		actors: [
+			{
+				actorName: "Denzel Washington",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/american-gangster/Denzel-Washington.jpg",
+			},
+			{
+				actorName: "Russell Crowe",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/american-gangster/Russell-Crowe.jpg",
+			},
+			{
+				actorName: "Chiwetel Ejiofor",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/american-gangster/Chiwetel-Ejiofor.jpg",
+			},
+			{
+				actorName: "Josh Brolin",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/american-gangster/Josh-Brolin.jpg",
+			},
+		],
+		movieSong: "http://localhost:3100/assets/song/american-gangster.wav",
+		synopsis:
+			"Frank Lucas bâtit un empire de drogue à Harlem tandis qu’un inspecteur tente de démanteler son réseau.",
+		gender: ["Crime", "Drame"],
+		movie4Images: [
+			"http://localhost:3100/assets/images/movie-Images/american-gangster/american-gangster-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/american-gangster/american-gangster-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/american-gangster/american-gangster-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/american-gangster/american-gangster-img04.png",
+		],
+		trailer: "https://www.youtube.com/watch?v=BV_nssS6Zkg",
+		producer: "Ridley Scott",
+	},
+
+	{
+		id: 59,
+		title: "Wonka",
+		poster:
+			"https://www.themoviedb.org/t/p/w600_and_h900_face/aKK2C3SErXIhNdT9gI93as2b8GV.jpg",
+		actors: [
+			{
+				actorName: "Timothée Chalamet",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/wonka/Timothee-Chalamet.jpg",
+			},
+			{
+				actorName: "Hugh Grant",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/wonka/Hugh-Grant.jpg",
+			},
+			{
+				actorName: "Olivia Colman",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/wonka/Olivia-Colman.jpg",
+			},
+			{
+				actorName: "Rowan Atkinson",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/wonka/Rowan-Atkinson.jpg",
+			},
+		],
+		movieSong: "http://localhost:3100/assets/song/wonka.wav",
+		synopsis:
+			"Un jeune Willy Wonka tente de révolutionner le chocolat face à des industriels puissants en utilisant son imagination.",
+		gender: ["Fantastique", "Comédie"],
+		movie4Images: [
+			"http://localhost:3100/assets/images/movie-Images/wonka/wonka-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/wonka/wonka-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/wonka/wonka-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/wonka/wonka-img04.png",
+		],
+		trailer: "https://www.youtube.com/watch?v=otNh9bTjXWg",
+		producer: "Paul King",
+	},
+
+	{
+		id: 60,
+		title: "Jack Reacher",
+		poster:
+			"https://www.themoviedb.org/t/p/w600_and_h900_face/yx9jmcMWMfO0gJfpmmKR0u016VQ.jpg",
+		actors: [
+			{
+				actorName: "Alan Ritchson",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Alan-Ritchson.jpg",
+			},
+			{
+				actorName: "Willa Fitzgerald",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Willa-Fitzgerald.jpg",
+			},
+			{
+				actorName: "Malcolm Goodwin",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Malcolm-Goodwin.jpg",
+			},
+			{
+				actorName: "Serinda Swan",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Serinda-Swan.jpg",
+			},
+		],
+		movieSong: "http://localhost:3100/assets/song/jack-reacher.wav",
+		synopsis:
+			"Jack Reacher est accusé de meurtre et découvre une conspiration en utilisant ses compétences militaires et son intelligence.",
+		gender: ["Action", "Thriller"],
+		movie4Images: [
+			"http://localhost:3100/assets/images/movie-Images/jack-reacher/jack-reacher-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/jack-reacher/jack-reacher-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/jack-reacher/jack-reacher-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/jack-reacher/jack-reacher-img04.png",
+		],
+		trailer: "https://www.youtube.com/watch?v=A7FiWkyevqY",
+		producer: "Nick Santora",
+	},
+
+	{
+		id: 61,
+		title: "Shining",
+		poster:
+			"https://www.themoviedb.org/t/p/w600_and_h900_face/cnniZQGtjK8kh2tsjih4GtkX6bl.jpg",
+		actors: [
+			{
+				actorName: "Jack Nicholson",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/shining/Jack-Nicholson.jpg",
+			},
+			{
+				actorName: "Shelley Duvall",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/shining/Shelley-Duvall.jpg",
+			},
+			{
+				actorName: "Danny Lloyd",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/shining/Danny-Lloyd.jpg",
+			},
+			{
+				actorName: "Scatman Crothers",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/shining/Scatman-Crothers.jpg",
+			},
+		],
+		movieSong: "http://localhost:3100/assets/song/shining.wav",
+		synopsis:
+			"Isolé dans un hôtel pendant l’hiver, un écrivain sombre peu à peu dans la folie sous l’influence de forces mystérieuses.",
+		gender: ["Horreur", "Thriller"],
+		movie4Images: [
+			"http://localhost:3100/assets/images/movie-Images/shining/shining-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/shining/shining-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/shining/shining-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/shining/shining-img04.png",
+		],
+		trailer: "https://www.youtube.com/watch?v=FZQvIJxG9Xs",
+		producer: "Stanley Kubrick",
+	},
+
+	{
+		id: 62,
+		title: "Halloween",
+		poster:
+			"https://www.themoviedb.org/t/p/w600_and_h900_face/r1ME6ZFxmZ6vFYqt9PHepiIb1t.jpg",
+		actors: [
+			{
+				actorName: "Jamie Lee Curtis",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/halloween/Jamie-Lee-Curtis.jpg",
+			},
+			{
+				actorName: "Donald Pleasence",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/halloween/Donald-Pleasence.jpg",
+			},
+			{
+				actorName: "Nick Castle",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/halloween/Nick-Castle.jpg",
+			},
+			{
+				actorName: "Nancy Kyes",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/halloween/Nancy-Kyes.jpg",
+			},
+		],
+		movieSong: "http://localhost:3100/assets/song/halloween.wav",
+		synopsis:
+			"Un tueur échappé d’un asile revient dans sa ville natale et traque méthodiquement une baby-sitter et ses amis.",
+		gender: ["Horreur"],
+		movie4Images: [
+			"http://localhost:3100/assets/images/movie-Images/halloween/halloween-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/halloween/halloween-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/halloween/halloween-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/halloween/halloween-img04.png",
+		],
+		trailer: "https://www.youtube.com/watch?v=T5ke9IPTIJQ",
+		producer: "John Carpenter",
+	},
+
+	{
+		id: 63,
+		title: "Saw",
+		poster:
+			"https://www.themoviedb.org/t/p/w600_and_h900_face/3fhUaMnlY72GGuBlzEeKA4brZAb.jpg",
+		actors: [
+			{
+				actorName: "Cary Elwes",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/saw/Cary-Elwes.jpg",
+			},
+			{
+				actorName: "Leigh Whannell",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/saw/Leigh-Whannell.jpg",
+			},
+			{
+				actorName: "Danny Glover",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/saw/Danny-Glover.jpg",
+			},
+			{
+				actorName: "Monica Potter",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/saw/Monica-Potter.jpg",
+			},
+		],
+		movieSong: "http://localhost:3100/assets/song/saw.wav",
+		synopsis:
+			"Deux hommes se réveillent piégés et doivent participer à des jeux mortels orchestrés par un tueur sadique.",
+		gender: ["Horreur", "Thriller"],
+		movie4Images: [
+			"http://localhost:3100/assets/images/movie-Images/saw/saw-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/saw/saw-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/saw/saw-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/saw/saw-img04.png",
+		],
+		trailer: "https://www.youtube.com/watch?v=S-1QgOMQ-ls",
+		producer: "James Wan",
+	},
+
+	{
+		id: 64,
+		title: "Psychose",
+		poster:
+			"https://www.themoviedb.org/t/p/w600_and_h900_face/lzF8b44dAvXFagQnB1UZa2AF87q.jpg",
+		actors: [
+			{
+				actorName: "Anthony Perkins",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/psychose/Anthony-Perkins.jpg",
+			},
+			{
+				actorName: "Janet Leigh",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/psychose/Janet-Leigh.jpg",
+			},
+			{
+				actorName: "Vera Miles",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/psychose/Vera-Miles.jpg",
+			},
+			{
+				actorName: "John Gavin",
+				actorImg:
+					"http://localhost:3100/assets/images/actor-Images/psychose/John-Gavin.jpg",
+			},
+		],
+		movieSong: "http://localhost:3100/assets/song/psychose.wav",
+		synopsis:
+			"Une femme en fuite s’arrête dans un motel isolé où elle rencontre un gérant étrange et inquiétant, cachant un terrible secret.",
+		gender: ["Horreur", "Thriller"],
+		movie4Images: [
+			"http://localhost:3100/assets/images/movie-Images/psychose/psychose-img01.png",
+			"http://localhost:3100/assets/images/movie-Images/psychose/psychose-img02.png",
+			"http://localhost:3100/assets/images/movie-Images/psychose/psychose-img03.png",
+			"http://localhost:3100/assets/images/movie-Images/psychose/psychose-img04.png",
+		],
+		trailer: "https://www.youtube.com/watch?v=Wz719b9QUqY",
+		producer: "Alfred Hitchcock",
 	},
 ];
 
