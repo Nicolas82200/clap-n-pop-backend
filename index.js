@@ -2541,7 +2541,18 @@ const movies = [
 
 app.use(cors("*"));
 app.get("/", (req, res) => {
-	res.json(movies);
+  res.json(movies);
+});
+
+app.get("/:id", (req, res) => {
+  const film = movies.find(movie => movie.id === Number(req.params.id))
+  
+  if (!film) {
+    res.status(404).json({ message: "Film non trouvé" })
+    return
+  }
+  
+  res.json(film)
 });
 
 app.listen(PORT, () => {
