@@ -831,7 +831,7 @@ const movies = [
 	},
 	{
 		id: 22,
-		title: "Batman : The Dark Knight",
+		title: "Batman",
 		poster:
 			"https://image.tmdb.org/t/p/w600_and_h900_face/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
 		actors: [
