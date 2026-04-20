@@ -394,8 +394,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/titanic/titanic-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/titanic/titanic-img04.png",
 		],
-		trailer:
-			"https://www.youtube.com/watch?v=I7c1etV7D7g&pp=ygUPdGl0YW5pYyB0cmFpbGVy",
+		trailer: "https://www.youtube.com/watch?v=I7c1etV7D7g",
 		producer: "James Cameron",
 	},
 	{
@@ -2068,9 +2067,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/chihiro/Mari-Natsuki.jpg",
 			},
 			{
-				actorName: "Bunta Sugawara",
+				actorName: "Ryûnosuke Kamiki",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/chihiro/Bunta-Sugawara.jpg",
+					"http://localhost:3100/assets/images/actor-Images/chihiro/Ryunosuke-Kamiki.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/chihiro.wav",
@@ -2109,9 +2108,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/tree-of-life/Sean-Penn.jpg",
 			},
 			{
-				actorName: "Hunter McCracken",
+				actorName: "Joanna Going",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/tree-of-life/Hunter-McCracken.jpg",
+					"http://localhost:3100/assets/images/actor-Images/tree-of-life/Joanna-Going.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/tree-of-life.wav",
@@ -2541,18 +2540,18 @@ const movies = [
 
 app.use(cors("*"));
 app.get("/", (req, res) => {
-  res.json(movies);
+	res.json(movies);
 });
 
 app.get("/:id", (req, res) => {
-  const film = movies.find(movie => movie.id === Number(req.params.id))
-  
-  if (!film) {
-    res.status(404).json({ message: "Film non trouvé" })
-    return
-  }
-  
-  res.json(film)
+	const film = movies.find((movie) => movie.id === Number(req.params.id));
+
+	if (!film) {
+		res.status(404).json({ message: "Film non trouvé" });
+		return;
+	}
+
+	res.json(film);
 });
 
 app.listen(PORT, () => {
