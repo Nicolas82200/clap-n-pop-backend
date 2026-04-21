@@ -394,8 +394,7 @@ const movies = [
 			"http://localhost:3100/assets/images/movie-Images/titanic/titanic-img03.png",
 			"http://localhost:3100/assets/images/movie-Images/titanic/titanic-img04.png",
 		],
-		trailer:
-			"https://www.youtube.com/watch?v=I7c1etV7D7g&pp=ygUPdGl0YW5pYyB0cmFpbGVy",
+		trailer: "https://www.youtube.com/watch?v=I7c1etV7D7g",
 		producer: "James Cameron",
 	},
 	{
@@ -2068,9 +2067,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/chihiro/Mari-Natsuki.jpg",
 			},
 			{
-				actorName: "Bunta Sugawara",
+				actorName: "Ryûnosuke Kamiki",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/chihiro/Bunta-Sugawara.jpg",
+					"http://localhost:3100/assets/images/actor-Images/chihiro/Ryunosuke-Kamiki.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/chihiro.wav",
@@ -2109,9 +2108,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/tree-of-life/Sean-Penn.jpg",
 			},
 			{
-				actorName: "Hunter McCracken",
+				actorName: "Joanna Going",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/tree-of-life/Hunter-McCracken.jpg",
+					"http://localhost:3100/assets/images/actor-Images/tree-of-life/Joanna-Going.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/tree-of-life.wav",
@@ -2340,24 +2339,24 @@ const movies = [
 			"https://www.themoviedb.org/t/p/w600_and_h900_face/yx9jmcMWMfO0gJfpmmKR0u016VQ.jpg",
 		actors: [
 			{
-				actorName: "Alan Ritchson",
+				actorName: "Tom Cruise",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Alan-Ritchson.jpg",
+					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Tom-Cruise.jpg",
 			},
 			{
-				actorName: "Willa Fitzgerald",
+				actorName: "Rosamund Pike",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Willa-Fitzgerald.jpg",
+					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Rosamund-Pike.jpg",
 			},
 			{
-				actorName: "Malcolm Goodwin",
+				actorName: "Richard Jenkins",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Malcolm-Goodwin.jpg",
+					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Richard-Jenkins.jpg",
 			},
 			{
-				actorName: "Serinda Swan",
+				actorName: "Werner Herzog",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Serinda-Swan.jpg",
+					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Werner-Herzog.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/jack-reacher.wav",
@@ -2386,9 +2385,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/shining/Jack-Nicholson.jpg",
 			},
 			{
-				actorName: "Shelley Duvall",
+				actorName: "Joe Turkel",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/shining/Shelley-Duvall.jpg",
+					"http://localhost:3100/assets/images/actor-Images/shining/Joe-Turkel.jpg",
 			},
 			{
 				actorName: "Danny Lloyd",
@@ -2437,9 +2436,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/halloween/Nick-Castle.jpg",
 			},
 			{
-				actorName: "Nancy Kyes",
+				actorName: "Kyle Richards",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/halloween/Nancy-Kyes.jpg",
+					"http://localhost:3100/assets/images/actor-Images/halloween/Kyle-Richards.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/halloween.wav",
@@ -2519,9 +2518,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/psychose/Vera-Miles.jpg",
 			},
 			{
-				actorName: "John Gavin",
+				actorName: "Martin Balsam",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/psychose/John-Gavin.jpg",
+					"http://localhost:3100/assets/images/actor-Images/psychose/Martin-Balsam.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/psychose.wav",
@@ -2541,18 +2540,18 @@ const movies = [
 
 app.use(cors("*"));
 app.get("/", (req, res) => {
-  res.json(movies);
+	res.json(movies);
 });
 
 app.get("/:id", (req, res) => {
-  const film = movies.find(movie => movie.id === Number(req.params.id))
-  
-  if (!film) {
-    res.status(404).json({ message: "Film non trouvé" })
-    return
-  }
-  
-  res.json(film)
+	const film = movies.find((movie) => movie.id === Number(req.params.id));
+
+	if (!film) {
+		res.status(404).json({ message: "Film non trouvé" });
+		return;
+	}
+
+	res.json(film);
 });
 
 app.listen(PORT, () => {
