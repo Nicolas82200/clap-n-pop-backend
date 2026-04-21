@@ -2339,24 +2339,24 @@ const movies = [
 			"https://www.themoviedb.org/t/p/w600_and_h900_face/yx9jmcMWMfO0gJfpmmKR0u016VQ.jpg",
 		actors: [
 			{
-				actorName: "Alan Ritchson",
+				actorName: "Tom Cruise",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Alan-Ritchson.jpg",
+					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Tom-Cruise.jpg",
 			},
 			{
-				actorName: "Willa Fitzgerald",
+				actorName: "Rosamund Pike",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Willa-Fitzgerald.jpg",
+					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Rosamund-Pike.jpg",
 			},
 			{
-				actorName: "Malcolm Goodwin",
+				actorName: "Richard Jenkins",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Malcolm-Goodwin.jpg",
+					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Richard-Jenkins.jpg",
 			},
 			{
-				actorName: "Serinda Swan",
+				actorName: "Werner Herzog",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Serinda-Swan.jpg",
+					"http://localhost:3100/assets/images/actor-Images/jack-reacher/Werner-Herzog.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/jack-reacher.wav",
@@ -2385,9 +2385,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/shining/Jack-Nicholson.jpg",
 			},
 			{
-				actorName: "Shelley Duvall",
+				actorName: "Joe Turkel",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/shining/Shelley-Duvall.jpg",
+					"http://localhost:3100/assets/images/actor-Images/shining/Joe-Turkel.jpg",
 			},
 			{
 				actorName: "Danny Lloyd",
@@ -2436,9 +2436,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/halloween/Nick-Castle.jpg",
 			},
 			{
-				actorName: "Nancy Kyes",
+				actorName: "Kyle Richards",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/halloween/Nancy-Kyes.jpg",
+					"http://localhost:3100/assets/images/actor-Images/halloween/Kyle-Richards.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/halloween.wav",
@@ -2518,9 +2518,9 @@ const movies = [
 					"http://localhost:3100/assets/images/actor-Images/psychose/Vera-Miles.jpg",
 			},
 			{
-				actorName: "John Gavin",
+				actorName: "Martin Balsam",
 				actorImg:
-					"http://localhost:3100/assets/images/actor-Images/psychose/John-Gavin.jpg",
+					"http://localhost:3100/assets/images/actor-Images/psychose/Martin-Balsam.jpg",
 			},
 		],
 		movieSong: "http://localhost:3100/assets/song/psychose.wav",
