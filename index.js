@@ -2211,7 +2211,7 @@ const movies = [
 
 	{
 		id: 57,
-		title: "Django Unchained",
+		title: "Django",
 		poster:
 			"https://www.themoviedb.org/t/p/w600_and_h900_face/vRXUnWrXUgXRoX0BaEcuNMfyeQt.jpg",
 		actors: [
@@ -2545,12 +2545,10 @@ app.get("/", (req, res) => {
 
 app.get("/:id", (req, res) => {
 	const film = movies.find((movie) => movie.id === Number(req.params.id));
-
 	if (!film) {
 		res.status(404).json({ message: "Film non trouvé" });
 		return;
 	}
-
 	res.json(film);
 });
 
