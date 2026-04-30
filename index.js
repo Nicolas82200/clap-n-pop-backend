@@ -3,6 +3,7 @@ const cors = require("cors");
 const path = require("path");
 const app = express();
 const PORT = 3100;
+const BASE_URL = process.env.BASE_URL || `http://localhost:${PORT}`;
 
 app.use("/assets", express.static(path.join(__dirname, "assets")));
 
@@ -2537,7 +2538,27 @@ const movies = [
 		producer: "Alfred Hitchcock",
 	},
 ];
+function replaceLocalUrls(obj) {
+	const str = JSON.stringify(obj);
+	const replaced = str.replaceAll(
+		`http://localhost:${PORT}`,
+		process.env.BASE_URL || `http://localhost:${PORT}`,
+	);
+	return JSON.parse(replaced);
+}
 
+app.get("/", (req, res) => {
+	res.json(replaceLocalUrls(movies));
+});
+
+app.get("/:id", (req, res) => {
+	const film = movies.find((movie) => movie.id === Number(req.params.id));
+	if (!film) {
+		res.status(404).json({ message: "Film non trouvé" });
+		return;
+	}
+	res.json(replaceLocalUrls(film));
+});
 app.use(cors("*"));
 app.get("/", (req, res) => {
 	res.json(movies);
